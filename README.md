@@ -2,6 +2,8 @@
 
 순수한 HTML과 CSS를 이용하여 각 팀원을 소개하는 페이지를 제작한다.
 
+[👉 Quick Link](https://itsmo1031.github.io/KCS-Introduce/)
+
 ## 팀원 소개
 
 |  이름  |                github                |
