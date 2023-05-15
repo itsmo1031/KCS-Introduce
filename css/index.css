@@ -7,6 +7,7 @@
 }
 
 body {
+  overflow-x: hidden;
   align-items: center;
   background-color: #ffcd00;
   display: flex;
@@ -109,5 +110,68 @@ body div {
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+@media (max-height: 700px) {
+  body {
+    justify-content: center;
+  }
+  .member {
+    flex-direction: column;
+    width: 200px;
+  }
+  .member ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .member ul:first-child {
+    margin-bottom: 0;
+  }
+  .member li {
+    min-width: 100px;
+    min-height: 100px;
+  }
+}
+
+@media (min-height: 700px) and (max-height: 900px) {
+  body {
+    justify-content: center;
+  }
+  .member {
+    flex-direction: column;
+    width: 240px;
+  }
+  .member ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .member ul:first-child {
+    margin-bottom: 0;
+  }
+  .member li {
+    min-width: 120px;
+    min-height: 120px;
+  }
+}
+
+@media (min-height: 900px) and (max-height: 950px) {
+  body {
+    justify-content: center;
+  }
+  .member {
+    flex-direction: column;
+    width: 280px;
+  }
+  .member ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .member ul:first-child {
+    margin-bottom: 0;
+  }
+  .member li {
+    min-width: 140px;
+    min-height: 140px;
   }
 }
