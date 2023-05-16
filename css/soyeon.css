@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "Jalnan";
-  src: url("../fonts/Jalnan.ttf") format("truetype");
+  font-family: 'Jalnan';
+  src: url('../fonts/Jalnan.ttf') format('truetype');
 }
 * {
-  font-family: "Jalnan";
+  font-family: 'Jalnan';
 }
 #wrapper {
   width: 100%;
@@ -52,7 +52,7 @@
   flex-direction: column;
   align-items: center;
   text-align: end;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .profile_detail2 {
@@ -73,9 +73,10 @@
 .spe {
   display: flex;
   flex-direction: row;
-  height: 20%;
+  height: 15%;
   margin: 2vw 10vh;
   margin-top: 3vh;
+  margin-bottom: 50px;
 }
 .cif {
   width: 26vw;
@@ -99,7 +100,7 @@
 }
 .contact_me {
   margin-top: 2vh;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
   font-size: 40px;
 }
 .image-container {
