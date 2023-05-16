@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "Jalnan";
-  src: url("../fonts/Jalnan.ttf") format("truetype");
+  font-family: 'Jalnan';
+  src: url('../fonts/Jalnan.ttf') format('truetype');
 }
 * {
-  font-family: "Jalnan";
+  font-family: 'Jalnan';
 }
 #wrapper {
   width: 100%;
