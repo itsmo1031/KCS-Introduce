@@ -9,7 +9,7 @@
     <style>
       /* 스타일 추가 */
       body {
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: "Nanum Gothic", sans-serif;
         text-align: center;
       }
       .window {
@@ -39,7 +39,18 @@
         object-fit: cover;
         margin-right: 20px;
         margin-top: 20px;
+        animation: rotate 1.5s infinite;
       }
+
+      @keyframes rotate {
+        from {
+          transform: perspective(200px) rotateY(0deg);
+        }
+        to {
+          transform: perspective(200px) rotateY(180deg);
+        }
+      }
+
       .profile-info {
         text-align: left;
       }
