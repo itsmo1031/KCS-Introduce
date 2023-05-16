@@ -4,10 +4,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DaeYoung's Profile</title>
+  <title>JunSeo's Profile</title>
   <link rel="stylesheet" href="../css/profile.css" />
   <style>
-    /* 스타일 추가 */
     body {
       font-family: 'Nanum Gothic', sans-serif;
       text-align: center;
@@ -22,73 +21,101 @@
       overflow: hidden;
       width: 100%;
     }
-    .window-header {
-      background-color: #999;
-      height: 20px;
-      line-height: 20px;
-      padding: 5px 10px;
-      text-align: right;
+    #container {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px auto;
+      max-width: 900px;
+      background-color: #333333;
+      padding-right: 150px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
-    .window-body {
-      padding: 20px;
-    }
-    .profile-img {
-      float: left;
-      width: 400px;
-      height: 550px;
+
+    #container img {
+      width: 300px;
+      height: 300px;
       object-fit: cover;
-      margin-right: 20px;
-      margin-top: 20px;
+      border-radius: 50%;
     }
-    .profile-info {
-      text-align: left;
+
+    #container div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    .profile-info h1 {
-      font-size: 48px; /* 글자 크기 */
-      font-weight: bold; /* 굵기 */
-      color: #ffcd00; /* 글자 색상 */
-      text-transform: uppercase; /* 대문자 변환 */
+
+    h1 {
+      font-size: 3rem;
+      margin: 20px 0 0;
     }
-    .profile-info p {
-      font-size: 23px;
-      color: #f3c243;
+
+    p {
+      font-size: 1.2rem;
+      color: #999999;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    #name {
       font-weight: bold;
-      margin: 30px 10px 50px 10px;
+      font-size: 3.5rem;
+      color: #ffcd00;
     }
-    .github-icon img {
+    #container img {
+      width: 400px;
+      height: 400px;
+    }
+
+    #age span,
+    #hobbies span,
+    #interest span,
+    #likes span,
+    #dislikes span,
+    #mbti span,
+    #address span{
+      font-weight: bold;
+      font-size: 23px;
+      color: #ffd166;
+    }
+    .github-icon {
       float: right;
       width: 100px;
       height: 100px;
     }
-    span{
-      font-size: 18px;
-      font-weight: bold;
-      color: #999999;
+    .btn-red {
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      margin-left: 6px;
     }
+
   </style>
 </head>
 <body>
 <div class="window">
   <div class="window-header">
-    <div class="btn-red"></div>
+    <button class="btn-red" onclick="window.history.back()"></button>
     <div class="btn-yel"></div>
     <div class="btn-grn"></div>
   </div>
   <div class="window-body">
-    <img class="profile-img" src="../images/daeyoung/daeYoung.png" alt="DaeYoung's Profile Picture" />
-    <div class="profile-info">
-      <h1>박준서</h1>
-      <p class="age">나이: <span>24</span></p>
-      <p class="hobbies">취미: 밴드<span></span></p>
-      <p class="interest">관신 포지션: <span>백엔드</span></p>
-      <p class="likes">좋아하는 것: <span>갱얼쥐</span></p>
-      <p class="dislikes">싫어하는 것: <span>취업준비</span></p>
-      <p class="mbti">MBTI: <span>INTP</span></p>
-
+    <div id="container">
+      <img src="../images/junseo.png" alt="Profile Picture">
+      <div>
+        <h1><span id="name">Jun Seo</span></h1>
+        <p id="age"><span>Age: </span>24</p>
+        <p id="hobbies"><span>Hobbies: </span>Band</p>
+        <p id="interest"><span>Interested in: </span>Backend</p>
+        <p id="likes"><span>Likes: </span>Puppy</p>
+        <p id="dislikes"><span>Dislikes: </span>Employment preparation</p>
+        <p id="mbti"><span>MBTI: </span>INTP</p>
+        <p id="address"><span>Address: </span>Seoul GangSeo-Gu</p>
+      </div>
     </div>
     <div class="github-icon">
-      <a href="https://github.com/Longstick0">
-        <img src="../images/daeyoung/gitbhubLogo.png" alt="Github Icon" />
+      <a href="https://github.com/def30">
+        <img src="../images/daeyoung/githubLogo.png" alt="Github Icon" width="80px" height="80px" />
       </a>
     </div>
   </div>
