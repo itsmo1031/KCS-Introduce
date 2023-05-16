@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DaeYoung's Profile</title>
+  <link rel="stylesheet" href="../css/profile.css" />
+  <style>
+    /* 스타일 추가 */
+    body {
+      font-family: 'Nanum Gothic', sans-serif;
+      text-align: center;
+    }
+    .window {
+      border: 1px solid #333;
+      background-color: #333333;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 30px auto;
+      max-width: 1000px;
+      overflow: hidden;
+      width: 100%;
+    }
+    .window-header {
+      background-color: #999;
+      height: 20px;
+      line-height: 20px;
+      padding: 5px 10px;
+      text-align: right;
+    }
+    .window-body {
+      padding: 20px;
+    }
+    .profile-img {
+      float: left;
+      width: 400px;
+      height: 550px;
+      object-fit: cover;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+    .profile-info {
+      text-align: left;
+    }
+    .profile-info h1 {
+      font-size: 48px; /* 글자 크기 */
+      font-weight: bold; /* 굵기 */
+      color: #ffcd00; /* 글자 색상 */
+      text-transform: uppercase; /* 대문자 변환 */
+    }
+    .profile-info p {
+      font-size: 23px;
+      color: #f3c243;
+      font-weight: bold;
+      margin: 30px 10px 50px 10px;
+    }
+    .github-icon img {
+      float: right;
+      width: 100px;
+      height: 100px;
+    }
+    span{
+      font-size: 18px;
+      font-weight: bold;
+      color: #999999;
+    }
+  </style>
+</head>
+<body>
+<div class="window">
+  <div class="window-header">
+    <div class="btn-red"></div>
+    <div class="btn-yel"></div>
+    <div class="btn-grn"></div>
+  </div>
+  <div class="window-body">
+    <img class="profile-img" src="../images/daeYoung.png" alt="DaeYoung's Profile Picture" />
+    <div class="profile-info">
+      <h1>Jang Dae Young</h1>
+      <p class="age">Age: <span>26</span></p>
+      <p class="hobbies">Hobbies: <span>Baseball (doing and watching)</span></p>
+      <p class="interest">Interested in: <span>Backend (Network Infrastructure, Spring)</span></p>
+      <p class="likes">Likes: <span>listening to songs, travel, electronic devices, coffee</span></p>
+      <p class="dislikes">Dislikes: <span>null</span></p>
+      <p class="mbti">MBTI: <span>INTP</span></p>
+
+    </div>
+    <div class="github-icon">
+      <a href="https://github.com/Longstick0">
+        <img src="../images/githubLogo.png" alt="Github Icon" />
+      </a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

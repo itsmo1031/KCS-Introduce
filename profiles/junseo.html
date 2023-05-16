@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JunSeo's Profile</title>
+  <link rel="stylesheet" href="../css/profile.css" />
+  <style>
+    body {
+      font-family: 'Nanum Gothic', sans-serif;
+      text-align: center;
+    }
+    .window {
+      border: 1px solid #333;
+      background-color: #333333;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 30px auto;
+      max-width: 1000px;
+      overflow: hidden;
+      width: 100%;
+    }
+    #container {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px auto;
+      max-width: 900px;
+      background-color: #333333;
+      padding-right: 150px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    #container img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    #container div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 20px 0 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #999999;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    #name {
+      font-weight: bold;
+      font-size: 3.5rem;
+      color: #ffcd00;
+    }
+    #container img {
+      width: 400px;
+      height: 400px;
+    }
+
+    #age span,
+    #hobbies span,
+    #interest span,
+    #likes span,
+    #dislikes span,
+    #mbti span,
+    #address span{
+      font-weight: bold;
+      font-size: 23px;
+      color: #ffd166;
+    }
+    .github-icon {
+      float: right;
+      width: 100px;
+      height: 100px;
+    }
+    .btn-red {
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      margin-left: 6px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="window">
+  <div class="window-header">
+    <button class="btn-red" onclick="window.history.back()"></button>
+    <div class="btn-yel"></div>
+    <div class="btn-grn"></div>
+  </div>
+  <div class="window-body">
+    <div id="container">
+      <img src="../images/junseo.png" alt="Profile Picture">
+      <div>
+        <h1><span id="name">Jun Seo</span></h1>
+        <p id="age"><span>Age: </span>24</p>
+        <p id="hobbies"><span>Hobbies: </span>Band</p>
+        <p id="interest"><span>Interested in: </span>Backend</p>
+        <p id="likes"><span>Likes: </span>Puppy</p>
+        <p id="dislikes"><span>Dislikes: </span>Employment preparation</p>
+        <p id="mbti"><span>MBTI: </span>INTP</p>
+        <p id="address"><span>Address: </span>Seoul GangSeo-Gu</p>
+      </div>
+    </div>
+    <div class="github-icon">
+      <a href="https://github.com/def30">
+        <img src="../images/githubLogo.png" alt="Github Icon" width="80px" height="80px" />
+      </a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
