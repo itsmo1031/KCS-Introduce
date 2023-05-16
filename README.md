@@ -6,11 +6,11 @@
 
 ## 팀원 소개
 
-|  이름  |                github                |
-| :----: |:------------------------------------:|
-| 박준서 |                                      |
-| 유소연 |                                      |
-| 임창준 |                                      |
-| 장대영 | [무야호](https://github.com/Longstick0) |
-| 정필모 | [Link](https://github.com/itsmo1031) |
-| 한소리 |                                      |
+|  이름  |                   github                    |
+| :----: | :-----------------------------------------: |
+| 박준서 |      [def30](https://github.com/def30)      |
+| 유소연 |  [loverduck](https://github.com/loverduck)  |
+| 임창준 |  [JoonyJoon](https://github.com/JoonyJoon)  |
+| 장대영 | [Longstick0](https://github.com/Longstick0) |
+| 정필모 |  [itsmo1031](https://github.com/itsmo1031)  |
+| 한소리 |   [HANSORII](https://github.com/HANSORII)   |
