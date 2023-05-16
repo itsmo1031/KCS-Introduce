@@ -6,15 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pilmo</title>
     <link rel="stylesheet" href="../css/profile.css" />
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'NanumSquareNeo';
+      }
+
+      .window-body {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #9bbbd4;
+      }
+
+      #profile-img {
+        width: 40vw;
+        position: relative;
+      }
+
+      #profile-img::after {
+        display: block;
+        content: "";
+        padding-bottom: 100%;
+      }
+      .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #371d1e;
+      }
+
+      h2 {
+        color: #371d1e;
+        font-size: 2em;
+        margin: 5%;
+      }
+
+      p {
+        font-size: 1.5em;
+        color: rgb(82, 81, 81);
+        text-indent: 20px;
+        font-weight: bold;
+      }
+
+      .sub {
+        margin: 10%;
+      }
+
+      .chat {
+        position: relative;
+        background: #ffffff;
+        border-radius: .4em;
+        width: 320px;
+        padding: 2px 2px
+      }
+
+      .chat:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 29px solid transparent;
+        border-right-color: #ffffff;
+        border-left: 0;
+        border-top: 0;
+        margin-top: -14.5px;
+        margin-left: -29px;
+      }
+
+    </style>
   </head>
   <body>
     <div class="window">
       <div class="window-header">
-        <div class="btn-red"></div>
+        <a href="../index.html"><div class="btn-red"></div></a>
         <div class="btn-yel"></div>
         <div class="btn-grn"></div>
       </div>
-      <div class="window-body"></div>
+      <div class="window-body">
+        <div class="profile">
+          <div id="profile-img">
+            <img class="content" src="../images/pilmo.png" alt="soyeon" />
+          </div>
+        </div>
+        <div class="introduce">
+          <h1>정필모 / 30</h1>
+          <div class="chat">
+            <div class="sub">
+              <h2>Interest</h2>
+              <p>클린코드 / 백엔드</p>
+            </div>
+            <div class="sub">
+              <h2>MBTI</h2>
+              <p>INFP</p>
+            </div>
+            <div class="sub">
+              <h2>Likes</h2>
+              <p>노래 듣기, 부르기</p>
+            </div>
+            <div class="sub">
+              <h2>Dislikes</h2>
+              <p>자소서 쓰기</p>
+            </div>
+            <div class="sub">
+              <h2>Hobbies</h2>
+              <p>기타 🎸, 게임 🎮</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
     </div>
   </body>
 </html>
